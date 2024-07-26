@@ -40,7 +40,7 @@ This JavaFX application is an Employee Management System that consists of a logi
 
 Project Screen : 
 ![Login_Employee](https://github.com/user-attachments/assets/9006339e-6ba9-43d2-8df6-67054666e1b2)
-![DashBoard_Page](https://github.com/user-attachments/assets/a5abdeda-82a2-49ae-ac6b-5b27820526cf)
+![Dashboard](https://github.com/user-attachments/assets/93f82d78-4349-4133-bd86-90f77553a717)
 ![Employee_Registration](https://github.com/user-attachments/assets/adcd3098-04f2-4460-997f-96b1f2992615)
 
 
