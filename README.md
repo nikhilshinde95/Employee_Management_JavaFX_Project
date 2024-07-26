@@ -17,7 +17,7 @@ This JavaFX application is an Employee Management System that consists of a logi
 
 1. **Clone the Repository**
     ```sh
-    git clone https://github.com/yourusername/employee-management-system.git
+    git clone https://github.com/nikhilshinde95/Employee_Management_JavaFX_Project.git
     cd employee-management-system
     ```
 
