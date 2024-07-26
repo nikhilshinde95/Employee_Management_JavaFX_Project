@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.AddEmployeeFXMLController">
+   <children>
+      <Label layoutX="278.0" layoutY="8.0" prefHeight="54.0" prefWidth="545.0" text="Employee Registration " textFill="#e43a3a">
+         <font>
+            <Font name="Tahoma Bold" size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="43.0" layoutY="81.0" prefHeight="400.0" prefWidth="349.0" style="-fx-background-color: grey;">
+         <children>
+            <Label layoutX="28.0" layoutY="37.0" prefHeight="28.0" prefWidth="93.0" text="Name : " textFill="#ebe7e7">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="134.0" layoutY="37.0" prefHeight="28.0" prefWidth="176.0" promptText="Enter Your Name" />
+            <Label layoutX="21.0" layoutY="93.0" prefHeight="28.0" prefWidth="100.0" text=" Positon : " textFill="#ebe7e7">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPosition" layoutX="134.0" layoutY="93.0" prefHeight="28.0" prefWidth="176.0" promptText="Enter Your Position" />
+            <Label layoutX="21.0" layoutY="147.0" prefHeight="28.0" prefWidth="100.0" text=" Mobile : " textFill="#ebe7e7">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMobile" layoutX="134.0" layoutY="147.0" prefHeight="28.0" prefWidth="176.0" promptText="Enter Your Mobile Number" />
+            <Label layoutX="28.0" layoutY="207.0" prefHeight="28.0" prefWidth="78.0" text="Email : " textFill="#ebe7e7">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" layoutX="134.0" layoutY="207.0" prefHeight="28.0" prefWidth="176.0" promptText="Enter Your Email" />
+            <Button fx:id="btnAdd" layoutX="28.0" layoutY="294.0" mnemonicParsing="false" onAction="#ADD" prefHeight="28.0" prefWidth="78.0" style="-fx-background-color: e43a3a;" text="ADD" textFill="#eeeaea" />
+            <Button fx:id="btnUpdate" layoutX="134.0" layoutY="294.0" mnemonicParsing="false" onAction="#Update" prefHeight="28.0" prefWidth="78.0" style="-fx-background-color: e43a3a;" text="Update" textFill="#eeecec" />
+            <Button fx:id="btnDelete" layoutX="240.0" layoutY="294.0" mnemonicParsing="false" onAction="#Delete" prefHeight="28.0" prefWidth="78.0" style="-fx-background-color: e43a3a;" text="Delete" textFill="#e1dddd" />
+            <Button fx:id="btnBack" layoutX="29.0" layoutY="342.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: orange;" text="GO TO BACK" textFill="#f5ecec" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="411.0" layoutY="82.0" prefHeight="400.0" prefWidth="576.0">
+         <children>
+            <TableView fx:id="employeeTableView" layoutY="-2.0" prefHeight="400.0" prefWidth="672.0">
+              <columns>
+                <TableColumn fx:id="IDColumn" prefWidth="60.0" text="ID" />
+                <TableColumn fx:id="NameColumn" prefWidth="199.0" text="Name" />
+                  <TableColumn fx:id="PositionColumn" minWidth="4.0" prefWidth="91.0" text="Position" />
+                  <TableColumn fx:id="MobileColumn" minWidth="0.0" prefWidth="94.0" text="Mobile" />
+                  <TableColumn fx:id="EmailColumn" minWidth="6.0" prefWidth="227.0" text="Email" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
